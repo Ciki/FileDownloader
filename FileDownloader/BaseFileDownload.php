@@ -39,11 +39,11 @@
 
 namespace FileDownloader;
 
+use App\Environment;
 use Exception;
 use FileDownloader\Downloader\AdvancedDownloader;
 use FileDownloader\Downloader\NativePHPDownloader;
 use Nette\Application\BadRequestException;
-use Nette\Environment;
 use Nette\InvalidArgumentException;
 use Nette\InvalidStateException;
 use Nette\Object;

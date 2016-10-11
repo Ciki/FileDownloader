@@ -38,8 +38,8 @@
 
 namespace FileDownloader;
 
+use App\Environment;
 use BigFileTools;
-use Nette\Environment;
 use Nette\Http\IResponse;
 use Nette\InvalidArgumentException;
 use Nette\InvalidStateException;

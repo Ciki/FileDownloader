@@ -38,10 +38,10 @@
 
 namespace FileDownloader\Downloader;
 
+use App\Environment;
 use FileDownloader\BaseFileDownload;
 use FileDownloader\FDTools;
 use FileDownloader\IDownloader;
-use Nette\Environment;
 use Nette\Http\Response;
 use Nette\Object;
 

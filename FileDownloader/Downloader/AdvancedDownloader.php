@@ -42,11 +42,11 @@
 
 namespace FileDownloader\Downloader;
 
+use App\Environment;
 use Exception;
 use FileDownloader\BaseFileDownload;
 use FileDownloader\FDTools;
 use FileDownloader\FileDownloaderException;
-use Nette\Environment;
 use Nette\InvalidArgumentException;
 use Nette\InvalidStateException;
 
