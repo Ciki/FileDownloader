@@ -492,10 +492,9 @@ abstract class BaseFileDownload extends Object {
 
 		// By file extension from ini file
 		$cache = Environment::getCache("FileDownloader");
-		if (!IsSet($cache["mime-types"])) {
-			$cache["mime-types"] = parse_ini_file(dirname(__FILE__) . DIRECTORY_SEPARATOR . "mime.ini");
-		}
-		$mimetypes = $cache["mime-types"];
+		$mimetypes = $cache->load("mime-types",	function(& $dependencies) {
+			return parse_ini_file(dirname(__FILE__) . DIRECTORY_SEPARATOR . "mime.ini");;
+		});
 
 		$extension = pathinfo($this->sourceFile, PATHINFO_EXTENSION);
 		if (array_key_exists($extension, $mimetypes)) {
