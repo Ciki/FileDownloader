@@ -17,7 +17,9 @@
 	},
 	"require": {
 		"php": ">= 7.1.0",
-		"nette/application": "~3.0",
-		"jkuchar/bigfiletools": "~2.0"
+		"nette/application": "~3.0"
+	},
+	"suggest": {
+		"jkuchar/bigfiletools": "Support for files larger than 4GB"
 	}
 }

@@ -288,6 +288,7 @@ class FDTools
 	 * @return float
 	 */
 	public static function filesize($file) {
+		require_once __DIR__ . '/BigFileTools.php';
 		return BigFileTools::fromPath($file)->getSize(true);
 	}
 
